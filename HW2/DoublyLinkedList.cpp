@@ -206,6 +206,7 @@ public:
         Node<T>* temp = nullptr;
 
         while (curr != nullptr) {
+
             temp = curr->prev;
             curr->prev = curr->next;
             curr->next = temp;
